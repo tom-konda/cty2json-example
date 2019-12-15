@@ -1,0 +1,55 @@
+.shallow-water{color:blue; background:blue; opacity : 0.66}
+.water{color:blue; background:blue}
+.land{border:solid 1px khaki;color: khaki; background:khaki;}
+.rubble{color: black; background:khaki;}
+.radioactive{color: black; background: yellow;}
+
+.road-line{color:white; background:darkgray;}
+.rail-line{color:brown;}
+.power-line{color:black;}
+.under-water{color:white;}
+/* ..vertical-rail-horizontal-power:after{
+  content: '━';
+  margin-left: -10px;
+  color:black;
+} */
+.vertical-rail-horizontal-power, .vertical-power-horizontal-rail{
+  color:brown;
+}
+
+/* .vertical-power-horizonal-rail:after{
+  content: '┃';
+  margin-left: -10px;
+  color:black;
+} */
+
+.park{color:springgreen;}
+.tree-shallow{color:springgreen;}
+.tree-deep{color:darkgreen;}
+
+.residential{color:green; font-weight :bold;}
+.commercial{color:dodgerblue; font-weight :bold;}
+.industrial{color:darkorange; font-weight :bold;}
+
+.residential-edge-n{border-top-color: green;}
+.residential-edge-w{border-left-color: green;}
+.residential-edge-e{border-right-color: green;}
+.residential-edge-s{border-bottom-color: green;}
+
+.commercial-edge-n{border-top-color: dodgerblue;}
+.commercial-edge-w{border-left-color: dodgerblue;}
+.commercial-edge-e{border-right-color: dodgerblue;}
+.commercial-edge-s{border-bottom-color: dodgerblue;}
+
+.industrial-edge-n{border-top-color: darkorange;}
+.industrial-edge-w{border-left-color: darkorange;}
+.industrial-edge-e{border-right-color: darkorange;}
+.industrial-edge-s{border-bottom-color: darkorange;}
+
+.building-edge-n{border-top-color: black;}
+.building-edge-w{border-left-color: black;}
+.building-edge-e{border-right-color: black;}
+.building-edge-s{border-bottom-color: black;}
+
+.pd{color:turquoise;}
+.fd{color:chocolate;}

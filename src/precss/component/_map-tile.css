@@ -1,0 +1,123 @@
+:root {
+  --ground-color: navajowhite;
+  --water-color: blue;
+  --commercial-color: dodgerblue;
+  --industrial-color: darkorange;
+  --residential-color: green;
+}
+
+.tile {
+  &__water{
+    background:var(--water-color);
+    &--shallow {
+      opacity: 0.66;
+    }
+  }
+  &__land{
+    background: var(--ground-color);
+  }
+  &__rubble{background:maroon; color:var(--ground-color);}
+  &__radioactive{color: black; background: yellow;}
+
+  &__road {
+    background:darkgray;
+  }
+
+  &__road-line{
+    stroke: white;
+    .full-width {
+      stroke-dasharray: 50%;
+      stroke-dashoffset: 75%;
+    }
+
+    .half-width{
+      stroke-dasharray: 30%;
+    }
+  }
+
+  &__rail-line{
+    stroke: brown;
+  }
+  &__power-line{
+    stroke: black;
+  }
+  &__under-water{
+    stroke: white;
+  }
+
+  &__vertical-rail-horizontal-road {
+    .line-vertical {
+      stroke: brown;
+    }
+  }
+
+  &__vertical-rail-horizontal-power {
+    .line-vertical {
+      stroke: brown;
+    }
+    .line-horizontal {
+      stroke: black;
+    }
+  }
+
+  &__vertical-road-horizontal-power {
+    .line-horizontal {
+      stroke: black;
+    }
+  }
+
+  &__vertical-road-horizontal-rail {
+    .line-horizontal {
+      stroke: brown;
+    }
+  }
+
+  &__vertical-power-horizontal-rail {
+    .line-vertical {
+      stroke: black;
+    }
+    .line-horizontal {
+      stroke: brown;
+    }
+  }
+
+  &__vertical-power-horizontal-road {
+    .line-vertical {
+      stroke: black;
+    }
+  }
+
+  &__park{
+    background:limegreen;
+    color: white;
+  }
+  &__tree-shallow{color:springgreen;}
+  &__tree-deep{color:darkgreen;}
+
+  &__residential{color:var(--residential-color); font-weight :bold;}
+  &__commercial{color:var(--commercial-color); font-weight :bold;}
+  &__industrial{color:var(--industrial-color); font-weight :bold;}
+
+  &__residential-edge-n{border-top: 1px solid var(--residential-color);}
+  &__residential-edge-w{border-left: 1px solid var(--residential-color);}
+  &__residential-edge-e{border-right: 1px solid var(--residential-color);}
+  &__residential-edge-s{border-bottom: 1px solid var(--residential-color);}
+
+  &__commercial-edge-n{border-top: 1px solid var(--commercial-color);}
+  &__commercial-edge-w{border-left: 1px solid var(--commercial-color);}
+  &__commercial-edge-e{border-right: 1px solid var(--commercial-color);}
+  &__commercial-edge-s{border-bottom: 1px solid var(--commercial-color);}
+
+  &__industrial-edge-n{border-top: 1px solid var(--industrial-color);}
+  &__industrial-edge-w{border-left: 1px solid var(--industrial-color);}
+  &__industrial-edge-e{border-right: 1px solid var(--industrial-color);}
+  &__industrial-edge-s{border-bottom: 1px solid var(--industrial-color);}
+
+  &__building-edge-n{border-top: 1px solid black;}
+  &__building-edge-w{border-left: 1px solid black;}
+  &__building-edge-e{border-right: 1px solid black;}
+  &__building-edge-s{border-bottom: 1px solid black;}
+
+  &__pd{color:turquoise;}
+  &__fd{color:chocolate;}
+}

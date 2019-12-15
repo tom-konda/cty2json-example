@@ -1,0 +1,21 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "es2019", "dom"
+    ],
+    "types": [
+      "react",
+      "react-dom",
+      "react-tabs",
+      "@tom-konda/cty2json",
+      "@emotion/styled",
+    ],
+    "rootDir": ".",
+    "target": "es2019",
+    "module": "es2020",
+    "outDir": "../../../temp/js/react-component",
+    "moduleResolution": "node",
+    "jsx": "react"
+  }
+}
