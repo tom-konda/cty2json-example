@@ -1,0 +1,154 @@
+/* Base */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+}
+menu, ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+svg {
+  height: 100%;
+  width: 100%;
+}
+/* Layout */
+.l-map {
+  display: grid;
+}
+/* Component */
+:root {
+  --ground-color: navajowhite;
+  --water-color: blue;
+  --commercial-color: dodgerblue;
+  --industrial-color: darkorange;
+  --residential-color: green;
+}
+.tile__water{
+    background:var(--water-color);
+  }
+.tile__water--shallow {
+      opacity: 0.66;
+    }
+.tile__land{
+    background: var(--ground-color);
+  }
+.tile__rubble{background:maroon; color:var(--ground-color);}
+.tile__radioactive{color: black; background: yellow;}
+.tile__road {
+    background:darkgray;
+  }
+.tile__road-line{
+    stroke: white;
+  }
+.tile__road-line .full-width {
+      stroke-dasharray: 50%;
+      stroke-dashoffset: 75%;
+    }
+.tile__road-line .half-width{
+      stroke-dasharray: 30%;
+    }
+.tile__rail-line{
+    stroke: brown;
+  }
+.tile__power-line{
+    stroke: black;
+  }
+.tile__under-water{
+    stroke: white;
+  }
+.tile__vertical-rail-horizontal-road .line-vertical {
+      stroke: brown;
+    }
+.tile__vertical-rail-horizontal-power .line-vertical {
+      stroke: brown;
+    }
+.tile__vertical-rail-horizontal-power .line-horizontal {
+      stroke: black;
+    }
+.tile__vertical-road-horizontal-power .line-horizontal {
+      stroke: black;
+    }
+.tile__vertical-road-horizontal-rail .line-horizontal {
+      stroke: brown;
+    }
+.tile__vertical-power-horizontal-rail .line-vertical {
+      stroke: black;
+    }
+.tile__vertical-power-horizontal-rail .line-horizontal {
+      stroke: brown;
+    }
+.tile__vertical-power-horizontal-road .line-vertical {
+      stroke: black;
+    }
+.tile__park{
+    background:limegreen;
+    color: white;
+  }
+.tile__tree-shallow{color:springgreen;}
+.tile__tree-deep{color:darkgreen;}
+.tile__residential{color:var(--residential-color); font-weight :bold;}
+.tile__commercial{color:var(--commercial-color); font-weight :bold;}
+.tile__industrial{color:var(--industrial-color); font-weight :bold;}
+.tile__residential-edge-n{border-top: 1px solid var(--residential-color);}
+.tile__residential-edge-w{border-left: 1px solid var(--residential-color);}
+.tile__residential-edge-e{border-right: 1px solid var(--residential-color);}
+.tile__residential-edge-s{border-bottom: 1px solid var(--residential-color);}
+.tile__commercial-edge-n{border-top: 1px solid var(--commercial-color);}
+.tile__commercial-edge-w{border-left: 1px solid var(--commercial-color);}
+.tile__commercial-edge-e{border-right: 1px solid var(--commercial-color);}
+.tile__commercial-edge-s{border-bottom: 1px solid var(--commercial-color);}
+.tile__industrial-edge-n{border-top: 1px solid var(--industrial-color);}
+.tile__industrial-edge-w{border-left: 1px solid var(--industrial-color);}
+.tile__industrial-edge-e{border-right: 1px solid var(--industrial-color);}
+.tile__industrial-edge-s{border-bottom: 1px solid var(--industrial-color);}
+.tile__building-edge-n{border-top: 1px solid black;}
+.tile__building-edge-w{border-left: 1px solid black;}
+.tile__building-edge-e{border-right: 1px solid black;}
+.tile__building-edge-s{border-bottom: 1px solid black;}
+.tile__pd{color:turquoise;}
+.tile__fd{color:chocolate;}
+/* Theme */
+/* @import "./theme/_hoge.css"; */
