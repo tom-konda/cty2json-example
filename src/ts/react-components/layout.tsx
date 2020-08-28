@@ -17,7 +17,7 @@ export const Layout:FC<{ctyjson ?: number}> = () => {
     [ctyjson, setCtyJSON]
   )
   return <section>
-    <input type="file" onChange={(event) => changeEventMethod(event, setCtyJSON)} />
+    <input type="file" accept='.cty' onChange={(event) => changeEventMethod(event, setCtyJSON)} />
     {ctyjson ? <TabLayout ctyjson={ctyjson} /> : ''}
   </section>
 }
